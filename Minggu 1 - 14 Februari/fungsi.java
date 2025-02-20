@@ -30,7 +30,7 @@ public class fungsi {
         System.out.println("Jumlah Bunga Royal Garden 4 Yang Tersisa :");
         System.out.println("Aglonema : " + (stok[3][0] - 1));
         System.out.println("Keladi : " + (stok[3][1] - 2));
-        System.out.println("Alocasia" + (stok[3][2]));
+        System.out.println("Alocasia : " + (stok[3][2]));
         System.out.println("Mawar : " + (stok[3][3] - 5));
     }
 }

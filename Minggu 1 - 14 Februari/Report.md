@@ -9,7 +9,7 @@
 
 ## Pemilihan
 
-![Screenshot](/pemilihan.png)
+![Screenshot](pemilihan.png)
 
 **Brief explanaton:** There are 4 main step: 
 1. Input all grades
@@ -19,7 +19,7 @@
 
 ## Perulangan
 
-![Screenshot](/perulangan.png)
+![Screenshot](perulangan.png)
 
 **Brief explanaton:** There are 4 main step: 
 1. Input NIM
@@ -29,7 +29,7 @@
 
 ## Array
 
-![Screenshot](/array.png)
+![Screenshot](array.png)
 
 **Brief explanaton:** There are 4 main step: 
 1. Initialize Data
@@ -39,7 +39,7 @@
 
 ## Fungsi
 
-![Screenshot](/fungsi.png)
+![Screenshot](fungsi.png)
 
 **Brief explanaton:** There are 4 main step: 
 1. Initialize Data 
@@ -49,7 +49,7 @@
 
 ## Tugas 1
 
-![Screenshot](/tugas1.png)
+![Screenshot](tugas1.png)
 
 **Brief explanaton:** There are 4 main step: 
 1. Initialize Data
@@ -59,7 +59,7 @@
 
 ## Tugas 2
 
-![Screenshot](/tugas2.png)
+![Screenshot](tugas2.png)
 
 **Brief explanaton:**  
 **1. Input all grades**
@@ -87,9 +87,9 @@
 
 ## Tugas 3
 
-![Screenshot](/tugas3-1.png)
-![Screenshot](/tugas3-2.png)
-![Screenshot](/tugas3-3.png)
+![Screenshot](tugas3-1.png)
+![Screenshot](tugas3-2.png)
+![Screenshot](tugas3-3.png)
 
 **Brief explanaton:** There are 4 main step: 
 1. Input Course Data → User inputs the number of courses and their details (name, SKS, semester, and lecture day).

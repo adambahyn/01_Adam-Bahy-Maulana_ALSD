@@ -47,3 +47,11 @@
 3. ![Screenshot](7.png), karena di class MahasiswaMain01 terdapat konstruktor tanpa parameter
 4. tidak, kita bisa mengakses atau menggunakan sesuai kebutuhan karena java menjalankan method sesuai urutan pemanggilan di main()
 5. ![Screenshot](8.png)
+
+## 2.4 Latihan Praktikum
+
+
+
+
+### 1. ![Screenshot](9.png)
+### 2. 

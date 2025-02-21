@@ -22,12 +22,13 @@
             System.out.println("IPK tidak valid. Harus antara 0.0 dan 4.0");
         }
 5. memeriksa nilai IPK dalam pemilihan if else if, dan mengembalikan String sesuai kondisi yang terpenuhi
-6.
+6. ![Screenshot](2.png)
+
 
 
 ## Perulangan
 
-![Screenshot](perulangan.png)
+![Screenshot](3.png)
 
 **Brief explanaton:** There are 4 main step: 
 1. Input NIM

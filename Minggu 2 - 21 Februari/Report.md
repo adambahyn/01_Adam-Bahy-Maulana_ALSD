@@ -9,7 +9,6 @@
 
 ## 2.1 Percobaan 1: Deklarasi Class, Atribut dan Method
 
-
 ![Screenshot](1.png)
 
 ### 2.1.3 Pertanyaan
@@ -26,83 +25,25 @@
 
 
 
-## Perulangan
+## 2.2 Percobaan 2: Instansiasi Object, serta Mengakses Atribut dan Method
 
 ![Screenshot](3.png)
 
-**Brief explanaton:** There are 4 main step: 
-1. Input NIM
-2. Extract last two digits
-3. Loop from 1 to digit2 
-4. Print pattern
+### 2.2.3 Pertanyaan
 
-## Array
+1. ![Screenshot](4.png), nama object yang dihasilkan adalah mhs1
+2. Atribut -> objek.atribut	; Method -> objek.method()	
+3. Karena atribut kelas dan ipk dari objek mhs1 telah dimanipulasi
 
-![Screenshot](array.png)
 
-**Brief explanaton:** There are 4 main step: 
-1. Initialize Data
-2. Input Scores & Convert to Grades 
-3. Calculate IP (GPA)
-4. Display Results
+## 2.3 Percobaan 3: Membuat Konstruktor
 
-## Fungsi
+![Screenshot](5.png)
 
-![Screenshot](fungsi.png)
+### 2.3.3 Pertanyaan
 
-**Brief explanaton:** There are 4 main step: 
-1. Initialize Data 
-2. Calculate Total Revenue
-3. Calculate Remaining Stock (Royal Garden 4)
-4. Execute Functions in main
-
-## Tugas 1
-
-![Screenshot](tugas1.png)
-
-**Brief explanaton:** There are 4 main step: 
-1. Initialize Data
-2. Take User Input
-3. Search for Matching Code
-4. Handle Invalid Input
-
-## Tugas 2
-
-![Screenshot](tugas2.png)
-
-**Brief explanaton:**  
-**1. Input all grades**
-    - The program continuously displays a menu using tampilkanMenu() and waits for user input.
-    - If the user enters 0, the program exits with a "Terima kasih!" message.
-**2. Validate the input**
-
-    - Option 1(Hitung Volume Kubus)
-        - Asks for the cube's side length.
-        - Calls hitungVolume(sisi), which calculates sisi^3.
-        - Displays the volume result.
-
-    - Option 2(Hitung Luas Permukaan Kubus)
-        - Asks for the cube's side length.
-        - Calls hitungLuasPermukaan(sisi), which calculates 6 * sisi^2.
-        - Displays the surface area result.
-
-    - Option 1(Hitung Keliling Kubus)
-        - Asks for the cube's side length.
-        - Calls hitungKeliling(sisi), which calculates 12 * sisi.
-        - Displays the perimeter result.
-
-**3. Invalid Input Handling**
-**4. Program Ends When User Inputs 0**
-
-## Tugas 3
-
-![Screenshot](tugas3-1.png)
-![Screenshot](tugas3-2.png)
-![Screenshot](tugas3-3.png)
-
-**Brief explanaton:** There are 4 main step: 
-1. Input Course Data → User inputs the number of courses and their details (name, SKS, semester, and lecture day).
-2. Display Menu Options → Provides options to view the schedule, filter by day/semester, or search for a course.
-3. Execute User Choice → Calls corresponding functions based on user selection.
-4. Data Processing → Filters and displays data based on user queries (e.g., by day, semester, or course name).
-
+1. ![Screenshot](6.png)
+2. Menginstansiasi objek mhs2 dari class Mahasiswa01 dengan parameter;
+3. ![Screenshot](7.png), karena di class MahasiswaMain01 terdapat konstruktor tanpa parameter
+4. tidak, kita bisa mengakses atau menggunakan sesuai kebutuhan karena java menjalankan method sesuai urutan pemanggilan di main()
+5. ![Screenshot](8.png)

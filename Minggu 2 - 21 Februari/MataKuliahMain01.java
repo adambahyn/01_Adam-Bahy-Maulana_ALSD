@@ -10,7 +10,9 @@ public static void main(String[] args) {
     matkul1.ubahSKS(5);
     matkul1.tambahJam(1);
     matkul1.kurangiJam(2);
+    System.out.println();
     matkul1.tampilInformasi();
+    System.out.println();
 
     MataKuliah01 matkul2 = new MataKuliah01("1B", "Algoritma dan Struktur Data", 4, 4);
 
@@ -18,7 +20,9 @@ public static void main(String[] args) {
     matkul2.ubahSKS(5);
     matkul2.tambahJam(1);
     matkul2.kurangiJam(2);
+    System.out.println();
     matkul2.tampilInformasi();
+    
 }
     
 }

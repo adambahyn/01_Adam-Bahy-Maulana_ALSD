@@ -1,3 +1,5 @@
+
+package Mahasiswa2;
 public class MahasiswaMain01 {
     public static void main(String[] args) {
         Mahasiswa01 mhs1 = new Mahasiswa01();

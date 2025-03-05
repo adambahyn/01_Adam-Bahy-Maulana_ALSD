@@ -1,3 +1,4 @@
+package Dosen2;
 public class Dosen01 {
     String idDosen, bidangKeahlian, nama;
     int tahunBergabung;

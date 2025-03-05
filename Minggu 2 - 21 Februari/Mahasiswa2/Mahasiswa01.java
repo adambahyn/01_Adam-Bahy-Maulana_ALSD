@@ -1,3 +1,4 @@
+package Mahasiswa2;
 public class Mahasiswa01 {
     String nama, nim, kelas;
     double ipk;

@@ -1,3 +1,4 @@
+package MataKuliah2;
 public class MataKuliah01 {
     String kodeMK, nama;
     int sks, jumlahJam;

@@ -1,3 +1,5 @@
+
+package MataKuliah2;
 public class MataKuliahMain01 {
 public static void main(String[] args) {
     MataKuliah01 matkul1 = new MataKuliah01();

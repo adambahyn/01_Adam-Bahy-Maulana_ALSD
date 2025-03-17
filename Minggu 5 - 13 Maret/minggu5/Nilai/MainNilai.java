@@ -28,7 +28,7 @@ public class MainNilai {
             nilai[i] = n[i].uas;
         }
 
-        int rata = n[0].rata(nilai);
+        double rata = n[0].rata(nilai);
 
         System.out.println("Nilai rata - rata UAS : " + rata);
 

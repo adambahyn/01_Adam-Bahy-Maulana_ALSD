@@ -1,3 +1,5 @@
+package Minggu_1;
+
 public class fungsi {
     static String cabang[] = { "Royal Garden 1", "Royal Garden 2", "Royal Garden 3", "Royal Garden 4" };
     static String bunga[] = { "Aglonema", "Keladi", "Alocasia", "Mawar" };

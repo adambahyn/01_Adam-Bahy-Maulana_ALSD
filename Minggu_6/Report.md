@@ -5,9 +5,9 @@
 | **Kelas**      | TI - 1H                                                                       |
 | **Repository** | [GitHub Repository](https://github.com/adambahyn/01_AdamBahyMaulana_PRAKALSD) |
 
-# Jobsheet 5
+# Jobsheet 6
 
-## 5.2 Menghitung Nilai Faktorial dengan Algoritma Brute Force dan Divide and Conquer
+## 6.2 Praktikum 1 - Mengimplementasikan Sorting menggunakan object 
 
 ![Screenshot](1.png)
 

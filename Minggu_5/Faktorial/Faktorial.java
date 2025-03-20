@@ -1,4 +1,4 @@
-package Faktorial;
+package Minggu_5.Faktorial;
 public class Faktorial {
 
     int faktorialBF(int n) {

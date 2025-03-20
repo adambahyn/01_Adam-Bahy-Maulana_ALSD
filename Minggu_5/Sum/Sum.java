@@ -1,4 +1,4 @@
-package Sum;
+package Minggu_5.Sum;
 public class Sum {
     double keuntungan[];
 

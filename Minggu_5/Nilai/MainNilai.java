@@ -1,4 +1,4 @@
-package Nilai;
+package Minggu_5.Nilai;
 
 public class MainNilai {
     public static void main(String[] args) {

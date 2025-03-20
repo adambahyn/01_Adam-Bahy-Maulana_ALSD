@@ -1,4 +1,5 @@
 package Dosen2;
+
 public class DosenMain01 {
     public static void main(String[] args) {
         int tahun = 2025;

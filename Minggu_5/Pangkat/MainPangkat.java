@@ -1,4 +1,4 @@
-package Pangkat;
+package Minggu_5.Pangkat;
 import java.util.*;
 
 public class MainPangkat {

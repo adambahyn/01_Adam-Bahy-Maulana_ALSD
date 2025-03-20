@@ -1,4 +1,4 @@
-package Faktorial;
+package Minggu_5.Faktorial;
 import java.util.*;
 public class MainFaktorial {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Sum;
+package Minggu_5.Sum;
 import java.util.Scanner;
 
 public class MainSum {

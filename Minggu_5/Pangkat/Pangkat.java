@@ -1,4 +1,4 @@
-package Pangkat;
+package Minggu_5.Pangkat;
 public class Pangkat {
     int nilai, pangkat;
 

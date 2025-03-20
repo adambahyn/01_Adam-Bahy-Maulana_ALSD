@@ -1,4 +1,4 @@
-package Nilai;
+package Minggu_5.Nilai;
 
 public class Nilai {
     public String nama, nim, tahun_masuk;

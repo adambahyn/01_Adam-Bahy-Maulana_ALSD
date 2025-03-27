@@ -1,6 +1,5 @@
 package Kendaraan;
 
-import java.util.Random;
 
 public class KendaraanMain {
     public static void main(String[] args) {

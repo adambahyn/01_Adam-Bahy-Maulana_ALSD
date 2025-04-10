@@ -1,9 +1,13 @@
 package Minggu_7.Mahasiswa;
 
 public class MahasiswaBerprestasi01 {
-    Mahasiswa01[] listMhs = new Mahasiswa01[5];
-
+    Mahasiswa01[] listMhs;
     int idx;
+
+    MahasiswaBerprestasi01(int jumlah) {
+        listMhs = new Mahasiswa01[jumlah];
+        idx = 0;
+    }
 
     void tambah(Mahasiswa01 m) {
         if (idx < listMhs.length) {
@@ -72,6 +76,21 @@ public class MahasiswaBerprestasi01 {
         return posisi;
     }
 
+    int findBinarySearch(double cari, int left, int right) {
+        int mid;
+        if (right >= left) {
+            mid = (left + right) / 2;
+            if (cari == listMhs[mid].ipk) {
+                return (mid);
+            } else if (listMhs[mid].ipk < cari) {
+                return findBinarySearch(cari, left, mid - 1);
+            } else {
+                return findBinarySearch(cari, mid + 1, right);
+            }
+        }
+        return -1;
+    }
+
     void tampilPosisi(double x, int pos) {
         if (pos != -1) {
             System.out.println("Data Mahasiswa dengan IPK : " + x + " ditemukan pada indeks " + pos);
@@ -86,8 +105,9 @@ public class MahasiswaBerprestasi01 {
             System.out.println("nama\t : " + listMhs[pos].nama);
             System.out.println("kelas\t : " + listMhs[pos].kelas);
             System.out.println("ipk\t : " + x);
+        } else {
+            System.out.println("Data Mahasiswa dengan IPK " + x + " tidak ditemukan");
         }
-        else{System.out.println("Data Mahasiswa dengan IPK " + x + " tidak ditemukan");}
     }
 
 }

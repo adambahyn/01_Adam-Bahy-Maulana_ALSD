@@ -6,9 +6,10 @@ public class MahasiswaDemo01 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-
-        MahasiswaBerprestasi01 list = new MahasiswaBerprestasi01();
-        int jumMhs = 5;
+        System.out.print("Masukkan banyaknya mahasiswa: ");
+        int jumMhs = sc.nextInt();
+        sc.nextLine();
+        MahasiswaBerprestasi01 list = new MahasiswaBerprestasi01(jumMhs);
 
         for (int i = 0; i < jumMhs; i++) {
             System.out.println("Masukkan Data Mahasiswa ke-" + (i + 1));
@@ -31,21 +32,30 @@ public class MahasiswaDemo01 {
         System.out.print("IPK : ");
         double cari = sc.nextDouble();
 
-        System.out.println("Menggunakan Sequential Searching");
-        double posisi = list.sequentialSearching(cari);
+        // System.out.println("Menggunakan Sequential Searching");
+        // double posisi = list.sequentialSearching(cari);
+        // int pss = (int) posisi;
+        // list.tampilPosisi(cari, pss);
+        // list.tampilDataSearch(cari, pss);
+
+        System.out.println("Menggunakan Binary Searching");
+        double posisi = list.findBinarySearch(cari, 0, jumMhs - 1);
         int pss = (int) posisi;
         list.tampilPosisi(cari, pss);
         list.tampilDataSearch(cari, pss);
 
-        // System.out.println("Data Mahasiswa setelah sorting berdasarkan IPK (DESC) : ");
+        // System.out.println("Data Mahasiswa setelah sorting berdasarkan IPK (DESC) :
+        // ");
         // list.bubbleSort();
         // list.tampil();
 
-        // System.out.println("Data yang sudah terurut menggunakan SELECTION SORT (ASC) : ");
+        // System.out.println("Data yang sudah terurut menggunakan SELECTION SORT (ASC)
+        // : ");
         // list.selectionSort();
         // list.tampil();
 
-        // System.out.println("Data yang sudah terurut menggunakan INSERTION SORT (DESC) : ");
+        // System.out.println("Data yang sudah terurut menggunakan INSERTION SORT (DESC)
+        // : ");
         // list.insertionSort();
         // list.tampil();
     }

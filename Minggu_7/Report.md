@@ -16,33 +16,52 @@
 1. **. Jelaskan perbedaan metod tampilDataSearch dan tampilPosisi pada class MahasiswaBerprestasi!**
    - method tampilPosisi hanya berfungsi untuk menampilkan bahwa data yang dicari dalam array ada atau tidak, method tampilDataSearch berfungsi untuk menampilkan informasi lain yang dicari dari indeks array yang sama ketika ditemukan
 2. **Jelaskan fungsi break pada kode program dibawah ini!**
-  - untuk menghentikan perulangan jika kondisi(ipk == cari) benar dan me return posisi yang sudah diganti
+
+- untuk menghentikan perulangan jika kondisi(ipk == cari) benar dan me return posisi yang sudah diganti
 
 ---
 
-## 5.3 Praktikum 2- (Sorting Menggunakan Array of Object)
+## 6.3. Searching / Pencarian Menggunakan Binary Search
 
 ![Screenshot](2.png)
 
-### **5.3.4 Pertanyaan**
+### **6.3.3 Pertanyaan**
 
-1. **Perhatikan perulangan di dalam bubbleSort() di bawah ini:**
-   a. **Mengapa syarat dari perulangan i adalah ?**
+1. **Tunjukkan pada kode program yang mana proses divide dijalankan!**
+
+   - ```java
+      if (cari == listMhs[mid].ipk)
+         return (mid);
+      else if (listMhs[mid].ipk > cari)
+         return findBinarySearch(cari, left, mid - 1);
+      else
+         return findBinarySearch(cari, mid + 1, right);
+
+     ```
+
+2. **Tunjukkan pada kode program yang mana proses conquer dijalankan!**
+   - ```java
+        if (cari == listMhs[mid].ipk) {
+                return (mid);
+        }
+     ```
+3. **Jika data IPK yang dimasukkan tidak urut. Apakah program masih dapat berjalan? Mengapa demikian!**
+   - tidak bisa, karena binary searching bekerja dengan cara membagi data menjadi 2 bagian, jika yang dicari lebih besar/kecil, maka akan melanjutkan pencarian kearah yang sudah ditentukan.
+4. **Jika IPK yang dimasukkan dari IPK terbesar ke terkecil (missal : 3.8, 3.7, 3.5, 3.4, 3.2) dan elemen yang dicari adalah 3.2. Bagaimana hasil dari binary search? Apakah sesuai? Jika tidak sesuai maka ubahlah kode program binary seach agar hasilnya sesuai**
+   - tidak sesuai,
    ```java
-      i<listMhs.length-1
+   else if (listMhs[mid].ipk < cari) {
+         return findBinarySearch(cari, left, mid - 1);
+   } else {
+         return findBinarySearch(cari, mid + 1, right);
+   }
    ```
-   karena di Bubble Sort, setelah penyortiran atau perulangan dilakukan selama n-1 kali, maka elemen terakhir sudah akan berada di posisi yang benar
-   b. **Mengapa syarat dari perulangan j adalah**
-   ```java
-      j<listMhs.length-i
-   ```
-   Agar tidak membandingkan elemen yang posisi nya sudah benar
-   c. **Jika  banyak  data  di  dalam  listMhs  adalah  50,  maka berapakali perulangan i akan berlangsung? Dan ada berapa Tahap bubble sort yang ditempuh?**
-   Perulangan i ber iterasi selama 49 kali, dan juga ada 49 tahap Bubble Sort
-
-2. **Modifikasi program diatas dimana data mahasiswa bersifat dinamis (input dari keyborad) yang terdiri dari nim, nama, kelas, dan ipk!**
-   - ![Screenshot](3.png)![Screenshot](4.png)
-
+5. **Modifikasilah program diatas yang mana jumlah mahasiswa yang di inputkan sesuai dengan masukan dari keyboard.**
+   - ```java
+      int jumMhs = sc.nextInt();
+      sc.nextLine();
+      MahasiswaBerprestasi01 list = new MahasiswaBerprestasi01(jumMhs);
+     ```
 
 ## 5.3.5 Mengurutkan Data Mahasiswa Berdasarkan IPK (Selection Sort)
 
@@ -52,7 +71,7 @@
 ### **5.3.7 Pertanyaan**
 
 1. **Di dalam method selection sort, terdapat baris program seperti di bawah ini:**
-**Untuk apakah proses tersebut, jelaskan!**
+   **Untuk apakah proses tersebut, jelaskan!**
    - untuk menemukan index elemen dengan nilai ipk terkecil yang nanti akan ditukar dengan bagian array yang belum disortir.
 
 ## 5.4 Mengurutkan Data Mahasiswa Berdasarkan IPK Menggunakan Insertion Sort
@@ -64,7 +83,6 @@
 
 1. **Ubahlah fungsi pada InsertionSort sehingga fungsi ini dapat melaksanakan proses sorting dengan cara descending.**
    - ![Screenshot](9.png)
-
 
 ---
 

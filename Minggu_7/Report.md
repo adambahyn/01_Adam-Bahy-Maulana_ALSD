@@ -63,32 +63,9 @@
       MahasiswaBerprestasi01 list = new MahasiswaBerprestasi01(jumMhs);
      ```
 
-## 5.3.5 Mengurutkan Data Mahasiswa Berdasarkan IPK (Selection Sort)
-
-![Screenshot](5.png)
-![Screenshot](6.png)
-
-### **5.3.7 Pertanyaan**
-
-1. **Di dalam method selection sort, terdapat baris program seperti di bawah ini:**
-   **Untuk apakah proses tersebut, jelaskan!**
-   - untuk menemukan index elemen dengan nilai ipk terkecil yang nanti akan ditukar dengan bagian array yang belum disortir.
-
-## 5.4 Mengurutkan Data Mahasiswa Berdasarkan IPK Menggunakan Insertion Sort
-
-![Screenshot](7.png)
-![Screenshot](8.png)
-
-### **5.4.3 Pertanyaan**
-
-1. **Ubahlah fungsi pada InsertionSort sehingga fungsi ini dapat melaksanakan proses sorting dengan cara descending.**
-   - ![Screenshot](9.png)
-
 ---
 
-## 5.5 Latihan Praktikum
+## 6.5 Latihan Praktikum
 
-![Screenshot](10.png)
-![Screenshot](11.png)
-![Screenshot](12.png)
-![Screenshot](13.png)
+![Screenshot](3.png)
+

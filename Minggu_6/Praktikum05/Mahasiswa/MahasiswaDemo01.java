@@ -7,19 +7,20 @@ public class MahasiswaDemo01 {
         Scanner sc = new Scanner(System.in);
 
         MahasiswaBerprestasi01 list = new MahasiswaBerprestasi01();
-        for (int i = 0; i < 5; i++) {
-            Mahasiswa01 m = new Mahasiswa01();
+        int jumMhs = 5;
+
+        for (int i = 0; i < jumMhs; i++) {
             System.out.println("Masukkan Data Mahasiswa ke-" + (i + 1));
             System.out.print("NIM   : ");
-            m.nim = sc.nextLine();
+            String nim = sc.nextLine();
             System.out.print("Nama  : ");
-            m.nama = sc.nextLine();
+            String nama = sc.nextLine();
             System.out.print("Kelas : ");
-            m.kelas = sc.nextLine();
+            String kelas = sc.nextLine();
             System.out.print("IPK   : ");
-            m.ipk = sc.nextDouble();
+            Double ipk = sc.nextDouble();
             sc.nextLine();
-            list.tambah(m);
+            list.tambah(new Mahasiswa01(nim, nama, kelas, ipk));
         }
         // Mahasiswa01 m1 = new Mahasiswa01("123", "Zidan", "2A", 3.2);
         // Mahasiswa01 m2 = new Mahasiswa01("124", "Ayu", "2A", 3.5);

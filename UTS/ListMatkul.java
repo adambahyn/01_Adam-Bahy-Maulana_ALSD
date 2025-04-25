@@ -1,5 +1,5 @@
 public class ListMatkul {
-    MataKuliah[] listMatkul = new MataKuliah[7];
+    MataKuliah[] listMatkul = new MataKuliah[100];
     int idx;
     void tambah(MataKuliah mataKuliah) {
         if (idx < this.listMatkul.length) {
@@ -18,5 +18,14 @@ public class ListMatkul {
             System.out.printf("SKS\t\t: %d\n", mataKuliah.sks);
             System.out.println();
         }
+    }
+
+    public MataKuliah cariByNama(String nama) {
+        for (int i = 0; i < idx; i++) {
+            if (listMatkul[i].getNama().equalsIgnoreCase(nama)) {
+                return listMatkul[i];
+            }
+        }
+        return null;
     }
 }

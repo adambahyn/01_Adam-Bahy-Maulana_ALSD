@@ -56,6 +56,9 @@ public class DosenMain {
             System.out.println("4. Urutkan Jadwal Berdasarkan Hari & Jam");
             System.out.println("5. Cari Jadwal Berdasarkan Nama Dosen");
             System.out.println("6. Cari Jadwal dengan Binary Search (Nama Dosen)");
+            System.out.println("7. Tambah Data Dosen");
+            System.out.println("8. Tambah Data Mata Kuliah");
+            System.out.println("9. Tambah Data Jadwal");
             System.out.println("0. Keluar");
             System.out.print("Menu: ");
             menu = sc.nextInt();
@@ -104,6 +107,57 @@ public class DosenMain {
                     } else {
                         listJadwalDosen.tampilDataPencarian(posisiBinary);
                     }
+                    break;
+                // Tambahkan ini dalam class DosenMain (lanjutan dari kode kamu)
+                case 7:
+                    sc.nextLine(); // konsumsi newline
+                    System.out.print("Masukkan Kode Dosen: ");
+                    String kdDosen = sc.nextLine();
+                    System.out.print("Masukkan Nama Dosen: ");
+                    String namaDosen = sc.nextLine();
+                    Dosen dosenBaru = new Dosen(kdDosen, namaDosen);
+                    list.tambah(dosenBaru);
+                    System.out.println("Data dosen berhasil ditambahkan.\n");
+                    break;
+
+                case 8:
+                    sc.nextLine(); // konsumsi newline
+                    System.out.print("Masukkan Kode Mata Kuliah: ");
+                    String kdMatkul = sc.nextLine();
+                    System.out.print("Masukkan Nama Mata Kuliah: ");
+                    String namaMatkul = sc.nextLine();
+                    System.out.print("Masukkan Jumlah SKS: ");
+                    int sks = sc.nextInt();
+                    MataKuliah mkBaru = new MataKuliah(kdMatkul, namaMatkul, sks);
+                    listMatkul.tambah(mkBaru);
+                    System.out.println("Data mata kuliah berhasil ditambahkan.\n");
+                    break;
+
+                case 9:
+                    sc.nextLine(); // konsumsi newline
+                    System.out.print("Masukkan Nama Dosen: ");
+                    String namaCariDosen = sc.nextLine();
+                    Dosen dosenJadwal = list.cariByNama(namaCariDosen);
+                    if (dosenJadwal == null) {
+                        System.out.println("Dosen tidak ditemukan.");
+                        break;
+                    }
+
+                    System.out.print("Masukkan Nama Mata Kuliah: ");
+                    String namaCariMK = sc.nextLine();
+                    MataKuliah mkJadwal = listMatkul.cariByNama(namaCariMK);
+                    if (mkJadwal == null) {
+                        System.out.println("Mata kuliah tidak ditemukan.");
+                        break;
+                    }
+
+                    System.out.print("Masukkan Hari: ");
+                    String hari = sc.nextLine();
+                    System.out.print("Masukkan Jam (contoh: 08:00): ");
+                    String jam = sc.nextLine();
+                    Jadwal jadwalBaru = new Jadwal(dosenJadwal, mkJadwal, hari, jam);
+                    listJadwalDosen.tambahJadwal(jadwalBaru);
+                    System.out.println("Jadwal berhasil ditambahkan.\n");
                     break;
 
             }

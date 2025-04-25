@@ -10,4 +10,8 @@ public class Dosen {
         System.out.printf("NIDN: %s\n", nidn);
         System.out.printf("Nama: %s\n\n", namaDosen);
     }
+
+    public String getNama() {
+        return namaDosen;
+    }
 }

@@ -32,13 +32,20 @@ public class DosenMain {
         listMatkul.tambah(m7);
 
         JadwalDosen listJadwalDosen = new JadwalDosen();
-        Jadwal j6 = new Jadwal(d1, m1, "Senin", "08:00");
-        Jadwal j2 = new Jadwal(d2, m2, "Selasa", "10:00");
-        Jadwal j3 = new Jadwal(d3, m3, "Rabu", "09:00");
-        Jadwal j4 = new Jadwal(d1, m4, "Kamis", "13:00");
-        Jadwal j5 = new Jadwal(d4, m5, "Jumat", "07:00");
-        Jadwal j1 = new Jadwal(d5, m6, "Senin", "11:00");
-        Jadwal j7 = new Jadwal(d2, m7, "Rabu", "14:00");
+        Jadwal j1 = new Jadwal(d1, m1, "Senin", "08:00");
+        Jadwal j2 = new Jadwal(d4, m5, "Jumat", "07:00");
+        Jadwal j3 = new Jadwal(d2, m2, "Senin", "08:00");
+        Jadwal j4 = new Jadwal(d5, m6, "Jumat", "07:00");
+        Jadwal j5 = new Jadwal(d3, m3, "Rabu", "09:00");
+        Jadwal j6 = new Jadwal(d2, m7, "Senin", "08:00");
+        Jadwal j7 = new Jadwal(d1, m4, "Rabu", "09:00");
+        // Jadwal j1 = new Jadwal(d1, m1, "Senin", "08:00");
+        // Jadwal j2 = new Jadwal(d2, m2, "Selasa", "10:00");
+        // Jadwal j3 = new Jadwal(d3, m3, "Rabu", "09:00");
+        // Jadwal j4 = new Jadwal(d1, m4, "Kamis", "13:00");
+        // Jadwal j5 = new Jadwal(d4, m5, "Jumat", "07:00");
+        // Jadwal j6 = new Jadwal(d5, m6, "Senin", "11:00");
+        // Jadwal j7 = new Jadwal(d2, m7, "Rabu", "14:00");
 
         listJadwalDosen.tambahJadwal(j1);
         listJadwalDosen.tambahJadwal(j2);
@@ -59,6 +66,7 @@ public class DosenMain {
             System.out.println("7. Tambah Data Dosen");
             System.out.println("8. Tambah Data Mata Kuliah");
             System.out.println("9. Tambah Data Jadwal");
+            System.out.println("10. Deteksi Jadwal Sama");
             System.out.println("0. Keluar");
             System.out.print("Menu: ");
             menu = sc.nextInt();
@@ -153,11 +161,27 @@ public class DosenMain {
 
                     System.out.print("Masukkan Hari: ");
                     String hari = sc.nextLine();
-                    System.out.print("Masukkan Jam (contoh: 08:00): ");
+                    System.out.print("Masukkan Jam (contoh: 23:59): ");
                     String jam = sc.nextLine();
                     Jadwal jadwalBaru = new Jadwal(dosenJadwal, mkJadwal, hari, jam);
                     listJadwalDosen.tambahJadwal(jadwalBaru);
                     System.out.println("Jadwal berhasil ditambahkan.\n");
+                    break;
+                case 10:
+                    listJadwalDosen.SortingASC();
+                    System.out.println("=== JADWAL KULIAH TERURUT (Hari & Jam) ===");
+                    listJadwalDosen.tampilJadwal();
+                    for (int i = 0; i < 6; i++) {
+                        System.out.println("--------------");
+                        int pss = listJadwalDosen.jadwalSama(i);
+                        if (pss != -1) {
+                            listJadwalDosen.tampilDataPencarian(pss);
+                            System.out.println("Sama Dengan :");
+                            System.out.println();
+                            listJadwalDosen.tampilDataPencarian(pss + 1);
+                        }
+                    }
+                    System.out.println("-------------");
                     break;
 
             }

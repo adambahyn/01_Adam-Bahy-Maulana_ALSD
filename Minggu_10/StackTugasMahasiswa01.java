@@ -56,6 +56,7 @@ public class StackTugasMahasiswa01 {
             return null;
         }
     }
+
     public Mahasiswa01 peekbottom() {
         if (!isEmpty()) {
             return stack[0];
@@ -70,5 +71,21 @@ public class StackTugasMahasiswa01 {
             System.out.println(stack[i].nama + "\t" + stack[i].nim + "\t" + stack[i].kelas);
         }
         System.out.println();
+    }
+
+    public String konversiDesimalBiner(int nilai) {
+        StackKonversi01 stack = new StackKonversi01();
+        while (nilai > 0) {
+            int sisa = nilai % 2;
+            stack.push(sisa);
+            nilai = nilai / 2;
+        }
+        String biner = new String();
+        while (!stack.isEmpty()) {
+            biner += stack.pop();
+
+        }
+        return biner;
+
     }
 }

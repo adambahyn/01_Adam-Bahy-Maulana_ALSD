@@ -39,51 +39,22 @@
 
 ---
 
-## 6.3. Searching / Pencarian Menggunakan Binary Search
+## 2.2 Percobaan 2: Konversi Nilai Tugas ke Biner 
 
-![Screenshot](2.png)
+![Screenshot](4.png)
 
-### **6.3.3 Pertanyaan**
+### **2.2.3 Pertanyaan**
 
-1. **Tunjukkan pada kode program yang mana proses divide dijalankan!**
+1. **Jelaskan alur kerja dari method konversiDesimalKeBiner!**
+   - selama nilai > 0, sisa = mencari modulus nilai dengan 2, masukkan sisa ke stack, membagi nilai menjadi setengah.
+   selama stack tidak kosong, biner ditambah dengan stack teratas.
+   return biner.
 
-   - ```java
-      if (cari == listMhs[mid].ipk)
-         return (mid);
-      else if (listMhs[mid].ipk > cari)
-         return findBinarySearch(cari, left, mid - 1);
-      else
-         return findBinarySearch(cari, mid + 1, right);
-
-     ```
-
-2. **Tunjukkan pada kode program yang mana proses conquer dijalankan!**
-   - ```java
-        if (cari == listMhs[mid].ipk) {
-                return (mid);
-        }
-     ```
-3. **Jika data IPK yang dimasukkan tidak urut. Apakah program masih dapat berjalan? Mengapa demikian!**
-   - tidak bisa, karena binary searching bekerja dengan cara membagi data menjadi 2 bagian, jika yang dicari lebih besar/kecil, maka akan melanjutkan pencarian kearah yang sudah ditentukan.
-4. **Jika IPK yang dimasukkan dari IPK terbesar ke terkecil (missal : 3.8, 3.7, 3.5, 3.4, 3.2) dan elemen yang dicari adalah 3.2. Bagaimana hasil dari binary search? Apakah sesuai? Jika tidak sesuai maka ubahlah kode program binary seach agar hasilnya sesuai**
-   - tidak sesuai,
-   ```java
-   else if (listMhs[mid].ipk < cari) {
-         return findBinarySearch(cari, left, mid - 1);
-   } else {
-         return findBinarySearch(cari, mid + 1, right);
-   }
-   ```
-5. **Modifikasilah program diatas yang mana jumlah mahasiswa yang di inputkan sesuai dengan masukan dari keyboard.**
-   - ```java
-      int jumMhs = sc.nextInt();
-      sc.nextLine();
-      MahasiswaBerprestasi01 list = new MahasiswaBerprestasi01(jumMhs);
-     ```
-
+2. **Pada method konversiDesimalKeBiner, ubah kondisi perulangan menjadi while (kode != 0), bagaimana hasilnya? Jelaskan alasannya!**
+   - Hasilnya akan sama saja selama nilai bernilai positif.
 ---
 
-## 6.5 Latihan Praktikum
+## 2.4 Latihan Praktikum
 
-![Screenshot](3.png)
+![Screenshot](5.png)
 

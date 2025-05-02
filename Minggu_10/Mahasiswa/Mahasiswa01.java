@@ -1,4 +1,4 @@
-package Minggu_10;
+package Minggu_10.Mahasiswa;
 
 public class Mahasiswa01 {
     String nim, nama, kelas;

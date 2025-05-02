@@ -1,4 +1,4 @@
-package Minggu_10;
+package Minggu_10.Surat;
 
 public class StackSurat01 {
     Surat01[] surat;

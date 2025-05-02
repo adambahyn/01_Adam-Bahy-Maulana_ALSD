@@ -1,4 +1,4 @@
-package Minggu_10;
+package Minggu_10.Mahasiswa;
 
 import java.util.*;
 

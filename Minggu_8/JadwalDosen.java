@@ -1,6 +1,7 @@
 
+package Minggu_8;
 public class JadwalDosen {
-    Jadwal[] listJadwal = new Jadwal[100];
+    Jadwal[] listJadwal = new Jadwal[7];
     int idx;
 
     public void tambahJadwal(Jadwal jadwal) {
@@ -33,18 +34,6 @@ public class JadwalDosen {
                 }
             }
         }
-    }
-
-    public int jadwalSama(int posisi) {
-        // Prioritaskan sorting berdasarkan hari dulu
-        if (listJadwal[posisi].kodeHari == listJadwal[posisi + 1].kodeHari) {
-            for (int j = posisi; j < idx; j++) {
-                if (listJadwal[j].jamjam == listJadwal[j + 1].jamjam) {
-                    return j;
-                }
-            }
-        } 
-        return -1;
     }
 
     void selectionSortASC() {
@@ -150,5 +139,5 @@ public class JadwalDosen {
             System.out.printf("Hari: %s\n", listJadwal[posisi].hari);
             System.out.printf("Jam: %s\n\n", listJadwal[posisi].jam);
         }
-    }
+    }    
 }

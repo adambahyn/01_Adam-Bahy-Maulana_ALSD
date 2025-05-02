@@ -1,4 +1,4 @@
-package Minggu_10;
+package Minggu_10.Surat;
 
 public class Surat01 {
     String idSurat, namaMahasiswa, kelas;

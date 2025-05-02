@@ -1,5 +1,6 @@
 
 
+package Minggu_8;
 public class Jadwal {
     Dosen dosen;
     MataKuliah matakuliah;

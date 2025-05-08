@@ -15,4 +15,4 @@ public class Surat01 {
         this.jenisIzin = jenisIzin;
         this.durasi = durasi;
     }
-}
+} 

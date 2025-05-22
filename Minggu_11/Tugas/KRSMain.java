@@ -41,6 +41,7 @@ public class KRSMain {
                         System.out.print("Melayani mahasiswa: ");
                         dilayani.tampilkanData();
                     }
+                    System.out.println();
                     Mahasiswa dilayani2 = antrian.layaniMahasiswa();
                     if (dilayani2 != null) {
                         System.out.print("Melayani mahasiswa: ");

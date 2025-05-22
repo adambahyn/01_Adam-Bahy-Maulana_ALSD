@@ -1,4 +1,4 @@
-package Minggu_12;
+package Minggu_12.Mahasiswa;
 
 public class SingleLinkedList01 {
     NodeMahasiswa01 head, tail;

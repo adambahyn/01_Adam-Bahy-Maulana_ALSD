@@ -14,9 +14,9 @@
 ### **2.1.2 Pertanyaan!**
 
 1. **Mengapa hasil compile kode program di baris pertama menghasilkan “Linked List Kosong”?**
-   - karena di awal belum melakukan instansiasi maupun menjalankan method add.
+   - Karena di awal belum melakukan instansiasi maupun menjalankan method add.
 2. **Jelaskan kegunaan variable temp secara umum pada setiap method!**
-   - agar dapat dilakukan iterasi ke tiap node tanpa memindah head dan tail.
+   - Agar dapat dilakukan iterasi ke tiap node tanpa memindah head dan tail.
 3. **Lakukan modifikasi agar data dapat ditambahkan dari keyboard!**
    - ![Screenshot](2.png)![Screenshot](3.png)![Screenshot](4.png)
 ---
@@ -35,8 +35,9 @@
 
 ---
 
-## 2.4 Latihan Praktikum
+## 3. Tugas
 
 ![Screenshot](6.png)
 ![Screenshot](7.png)
+![Screenshot](8.png)
 

@@ -1,4 +1,4 @@
-package Minggu_12;
+package Minggu_12.Mahasiswa;
 
 import java.util.Scanner;
 

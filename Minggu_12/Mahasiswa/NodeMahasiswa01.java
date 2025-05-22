@@ -1,4 +1,4 @@
-package Minggu_12;
+package Minggu_12.Mahasiswa;
 
 public class NodeMahasiswa01 {
     Mahasiswa01 data;

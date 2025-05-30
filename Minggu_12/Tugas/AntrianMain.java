@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class AntrianMain {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        QueueAntrian queue = new QueueAntrian();
+        Queue queue = new Queue();
         int pilihan;
 
         do {

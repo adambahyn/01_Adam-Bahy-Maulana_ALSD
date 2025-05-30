@@ -1,6 +1,6 @@
 package Minggu_12.Tugas;
 
-public class QueueAntrian {
+public class Queue {
     Node front, rear;
     int size;
 

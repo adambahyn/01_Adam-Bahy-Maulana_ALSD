@@ -180,20 +180,32 @@ public class BinaryTree01 {
     }
 
     public void addRekursif(Mahasiswa01 mhs) {
-        root=tambahRekursif(root, mhs);
+        if (root == null) {
+            root = new Node01(mhs);
+        } else {
+            add(root, mhs); // panggil versi rekursif
+        }
     }
 
-    private Node01 tambahRekursif(Node01 current, Mahasiswa01 mhs) {
-        if (current == null) {
-            return new Node01(mhs);
+    public void add(Node01 current, Mahasiswa01 mhs) {
+        if (root == null) {
+            root = new Node01(mhs);
+            return;
         }
 
         if (mhs.ipk < current.mahasiswa.ipk) {
-            current.left = tambahRekursif(current.left, mhs);
+            if (current.left == null) {
+                current.left = new Node01(mhs);
+            } else {
+                add(current.left, mhs); // Rekursif ke kiri
+            }
         } else {
-            current.right = tambahRekursif(current.right, mhs);
+            if (current.right == null) {
+                current.right = new Node01(mhs);
+            } else {
+                add(current.right, mhs); // Rekursif ke kanan
+            }
         }
-        return current;
     }
 
     public Mahasiswa01 cariMinIPK() {
